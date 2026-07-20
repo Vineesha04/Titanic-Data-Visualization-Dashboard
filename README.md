@@ -214,14 +214,6 @@ Titanic_Data_Visualization_Dashboard.ipynb
 
 ---
 
-## 👩‍💻 Author
-
-**Vineesha Reddy**
-
-Data Science and Data Visualization Project
-
----
-
 ## 📄 License
 
 This project is licensed under the MIT License.

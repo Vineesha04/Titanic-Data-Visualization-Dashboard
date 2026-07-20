@@ -6,113 +6,222 @@
 ![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Plots-teal)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-A professional exploratory data analysis and visualization project based on the Titanic passenger dataset.
+A professional exploratory data analysis and visualization project based on the famous **Titanic passenger dataset**.
 
-The project demonstrates data cleaning, feature engineering, statistical analysis, visual storytelling, and executive dashboard development using Python.
-
----
-
-## 📊 Executive Dashboard
-
-![Titanic Executive Dashboard](images/titanic_premium_executive_dashboard.png)
+This project demonstrates **data cleaning**, **feature engineering**, **exploratory data analysis (EDA)**, **statistical visualization**, and the development of a **premium executive dashboard** using Python.
 
 ---
 
-## 🎯 Project Objective
+# 📊 Executive Dashboard
 
-The objective of this project is to transform the Titanic passenger dataset into a clear and meaningful visual story.
-
-The analysis explores how passenger characteristics such as gender, class, age, fare, family structure, cabin availability, embarkation port, and social title were associated with survival.
+![Titanic Executive Dashboard](titanic_premium_executive_dashboard.png)
 
 ---
 
-## ✨ Project Highlights
+# 🎯 Project Objective
 
-- Cleaned and validated the raw Titanic dataset
-- Treated missing age values using passenger title and class
-- Transformed cabin information into useful analytical features
-- Engineered demographic, family, and travel-related variables
-- Created 12 publication-quality visualizations
-- Developed a premium executive dashboard with KPI cards
-- Added exact analytical summary tables
-- Exported a cleaned and feature-engineered dataset
-- Documented findings, limitations, and future improvements
+The objective of this project is to transform the Titanic passenger dataset into a meaningful visual story.
 
----
+This analysis explores how passenger characteristics such as:
 
-## 🧹 Data Cleaning
+- Gender
+- Passenger Class
+- Age
+- Fare
+- Family Structure
+- Cabin Availability
+- Embarkation Port
+- Passenger Title
 
-The cleaning workflow included:
+influenced survival.
 
-- Inspecting missing values and duplicates
-- Filling missing `Age` values using median age by passenger title and class
-- Filling missing `Embarked` values using the mode
-- Extracting deck and cabin-availability information
-- Removing the original high-missing `Cabin` column after extracting useful features
-- Validating numerical and categorical values
+The project focuses on transforming raw data into business-quality insights through professional visualization.
 
 ---
 
-## 🧠 Feature Engineering
+# ✨ Project Highlights
 
-The following features were created:
+- ✅ Cleaned and validated raw Titanic dataset
+- ✅ Handled missing values intelligently
+- ✅ Engineered 13 new meaningful features
+- ✅ Built 12 publication-quality visualizations
+- ✅ Created a premium executive dashboard
+- ✅ Performed statistical exploration
+- ✅ Exported cleaned feature-engineered dataset
+- ✅ Professional GitHub documentation
+
+---
+
+# 🧹 Data Cleaning
+
+The following preprocessing steps were performed:
+
+- Removed duplicate records
+- Checked missing values
+- Filled missing Age values using median age grouped by passenger Title and Class
+- Filled missing Embarked values using Mode
+- Extracted useful Cabin information
+- Converted Cabin into CabinKnown and Deck features
+- Removed unnecessary columns after feature extraction
+- Validated categorical values
+
+---
+
+# 🧠 Feature Engineering
+
+The following engineered features were created:
 
 | Feature | Description |
-|---|---|
-| `Title` | Passenger title extracted from name |
-| `FamilySize` | Total family members aboard, including the passenger |
-| `IsAlone` | Indicates whether the passenger travelled alone |
-| `TravelStatus` | Human-readable solo or family travel label |
-| `FamilyCategory` | Alone, Small Family, or Large Family |
-| `AgeGroup` | Passenger age category |
-| `FareGroup` | Fare category based on quartiles |
-| `CabinKnown` | Indicates whether cabin information was recorded |
-| `Deck` | Deck letter extracted from cabin |
-| `IsChild` | Indicates whether the passenger was a child |
-| `IsMother` | Engineered motherhood indicator |
-| `TicketGroupSize` | Number of passengers sharing the same ticket |
-| `Surname` | Family surname extracted from the passenger name |
+|----------|-------------|
+| Title | Passenger title extracted from Name |
+| FamilySize | SibSp + Parch + 1 |
+| IsAlone | Indicates passengers travelling alone |
+| TravelStatus | Alone or With Family |
+| FamilyCategory | Alone / Small Family / Large Family |
+| AgeGroup | Passenger age category |
+| FareGroup | Fare quartile category |
+| CabinKnown | Cabin information available or not |
+| Deck | Deck extracted from Cabin |
+| IsChild | Child indicator |
+| IsMother | Mother indicator |
+| TicketGroupSize | Number of passengers sharing the same ticket |
+| Surname | Family surname extracted from Name |
 
 ---
 
-## 📈 Key Findings
+# 📈 Executive Dashboard
 
-1. The overall survival rate was approximately **38.4%**.
-2. Female passengers had a survival rate of approximately **74.2%**, compared with **18.9%** for male passengers.
-3. First-class passengers had the highest class-based survival rate at approximately **63.0%**.
-4. Third-class passengers experienced the lowest class-based survival outcome.
-5. Passengers travelling with small families achieved the highest family-based survival rate.
-6. Higher fares were generally associated with stronger survival outcomes.
-7. Passenger titles captured useful demographic and social information.
-8. Gender and passenger class produced the largest visible survival differences.
+The dashboard summarizes the most important business insights.
 
----
+KPIs included:
 
-## 📷 Selected Visualizations
+- Total Passengers
+- Overall Survival Rate
+- Female Survival Rate
+- First Class Survival Rate
 
-### Survival by Gender
+Visualizations included:
 
-![Survival by Gender](images/survival_by_gender.png)
-
-### Survival by Passenger Class
-
-![Survival by Passenger Class](images/survival_by_class.png)
-
-### Age Distribution
-
-![Age Distribution](images/age_distribution.png)
-
-### Gender and Passenger Class
-
-![Gender and Class](images/survival_gender_class.png)
-
-### Correlation Heatmap
-
-![Correlation Heatmap](images/correlation_heatmap.png)
+- Overall Survival
+- Survival by Gender
+- Survival by Passenger Class
+- Passenger Age Distribution
+- Family Survival
+- Fare Distribution
+- Correlation Heatmap
 
 ---
 
-## 🛠️ Technologies Used
+# 📷 Selected Visualizations
+
+## Overall Survival
+
+![Overall Survival](overall_survival.png)
+
+---
+
+## Survival by Gender
+
+![Survival by Gender](survival_by_gender.png)
+
+---
+
+## Survival by Passenger Class
+
+![Passenger Class](survival_by_class.png)
+
+---
+
+## Age Distribution
+
+![Age Distribution](age_distribution.png)
+
+---
+
+## Family Survival
+
+![Family Survival](survival_by_family.png)
+
+---
+
+## Survival by Passenger Title
+
+![Passenger Title](survival_by_title.png)
+
+---
+
+## Gender vs Passenger Class
+
+![Gender Class](survival_gender_class.png)
+
+---
+
+## Correlation Heatmap
+
+![Correlation](correlation_heatmap.png)
+
+---
+
+# 📊 Key Findings
+
+### 1. Overall Survival
+
+- Overall survival rate was **38.4%**.
+
+---
+
+### 2. Gender
+
+Female passengers survived at a much higher rate than males.
+
+- Female Survival: **74.2%**
+- Male Survival: **18.9%**
+
+---
+
+### 3. Passenger Class
+
+First-class passengers experienced the highest survival.
+
+| Class | Survival Rate |
+|--------|--------------|
+| First | 63.0% |
+| Second | 47.3% |
+| Third | 24.2% |
+
+---
+
+### 4. Family Size
+
+Passengers travelling with **small families** had the highest survival probability.
+
+---
+
+### 5. Fare
+
+Higher ticket fares generally corresponded to higher survival rates.
+
+---
+
+### 6. Passenger Titles
+
+Titles such as **Mrs**, **Miss**, and **Master** showed considerably higher survival than **Mr**.
+
+---
+
+### 7. Age
+
+Children showed relatively better survival than adults.
+
+---
+
+### 8. Cabin Information
+
+Passengers with recorded cabin information generally had higher survival.
+
+---
+
+# 🛠 Technologies Used
 
 - Python
 - Pandas
@@ -124,10 +233,10 @@ The following features were created:
 
 ---
 
-## 📁 Repository Structure
+# 📂 Repository Structure
 
 ```text
-Titanic-Data-Visualization-Dashboard/
+Titanic-Data-Visualization-Dashboard
 │
 ├── Titanic_Data_Visualization_Dashboard.ipynb
 ├── titanic_cleaned_and_featured.csv
@@ -136,84 +245,94 @@ Titanic-Data-Visualization-Dashboard/
 ├── LICENSE
 ├── .gitignore
 │
-└── images/
-    ├── titanic_premium_executive_dashboard.png
-    ├── overall_survival.png
-    ├── age_distribution.png
-    ├── survival_by_gender.png
-    ├── survival_by_class.png
-    ├── survival_gender_class.png
-    ├── fare_by_class.png
-    ├── age_vs_fare.png
-    ├── survival_by_age_group.png
-    ├── survival_by_family.png
-    ├── survival_by_port.png
-    ├── correlation_heatmap.png
-    └── survival_by_title.png
+├── titanic_premium_executive_dashboard.png
+├── overall_survival.png
+├── age_distribution.png
+├── age_vs_fare.png
+├── survival_by_gender.png
+├── survival_by_class.png
+├── survival_by_family.png
+├── survival_by_age_group.png
+├── survival_by_port.png
+├── survival_by_title.png
+├── survival_gender_class.png
+├── correlation_heatmap.png
 ```
 
 ---
 
-## ▶️ How to Run
+# ▶️ How to Run
 
-### Option 1: Google Colab
-
-1. Download or clone this repository.
-2. Open `Titanic_Data_Visualization_Dashboard.ipynb` in Google Colab.
-3. Upload the required dataset if prompted.
-4. Run all cells in order.
-
-### Option 2: Jupyter Notebook
-
-Clone the repository:
+## Clone Repository
 
 ```bash
 git clone https://github.com/Vineesha04/Titanic-Data-Visualization-Dashboard.git
+```
+
+Go inside
+
+```bash
 cd Titanic-Data-Visualization-Dashboard
 ```
 
-Install dependencies:
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Start Jupyter Notebook:
+Launch Jupyter Notebook
 
 ```bash
 jupyter notebook
 ```
 
-Open:
+Open
 
 ```text
 Titanic_Data_Visualization_Dashboard.ipynb
 ```
 
----
-
-## ⚠️ Limitations
-
-- The dataset does not represent every individual aboard the Titanic.
-- A large portion of cabin information was missing.
-- Some passenger ages were estimated.
-- The project identifies associations but does not prove causation.
-- Important operational factors such as evacuation timing and lifeboat access are unavailable.
-- The analysis is descriptive rather than predictive.
+Run all cells.
 
 ---
 
-## 🚀 Future Improvements
+# ⚠️ Limitations
 
-- Build an interactive dashboard using Plotly or Streamlit
-- Add statistical hypothesis testing
-- Train machine-learning survival prediction models
-- Compare Logistic Regression, Random Forest, and XGBoost
-- Add SHAP-based model explanations
-- Deploy the dashboard as a web application
+- Dataset contains missing Cabin values.
+- Age values required estimation.
+- Analysis identifies relationships rather than causal effects.
+- Some real-world factors (lifeboat access, evacuation timing) are unavailable.
+- Findings are based on the Kaggle Titanic dataset.
 
 ---
 
-## 📄 License
+# 🚀 Future Improvements
 
-This project is licensed under the MIT License.
+- Build an interactive Streamlit dashboard
+- Deploy dashboard online
+- Perform statistical hypothesis testing
+- Develop machine learning survival prediction models
+- Compare Logistic Regression, Random Forest, XGBoost
+- Add SHAP model explainability
+- Build a responsive web application
+
+---
+
+# 📜 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+# 👩‍💻 Author
+
+**Vineesha Reddy**
+
+B.Tech Computer Science Engineering (Networks)
+
+GitHub: **https://github.com/Vineesha04**
+
+---
+
+⭐ If you found this project useful, consider giving the repository a star.
